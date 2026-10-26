@@ -1,6 +1,4 @@
 const questions = [
-    
-
     {
         question: "Which planet is known as the Red Planet?",
         answers: [
@@ -269,7 +267,7 @@ function showQuestion(){
     questionElement.innerHTML = currentQuestinNo + ". " + currentQuestion.question;
     currentQuestion.answers.forEach(answer =>{
         let button = document.createElement("button");
-        button.innerHTML = answer.text;
+        button.textContent = answer.text;
         button.classList.add("btn");
         button.answerData = answer;
         button.addEventListener("click",() =>{
