@@ -1,70 +1,84 @@
-*{
+* {
     margin: 0;
-    padding: 0
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
 }
 body{
-    background: #222;
-
-}
-.head{
-    background: #fff;
-    color:#222;
-    margin: 30px auto 0;
-    padding:10px;
-    border-radius: 10px;
-    border-color: aqua;
-    display:block;
+    background-color: hsl(180, 33%, 98%);
     align-items: center;
-    width:90%;
-    max-width:400px;
-
 }
-.head h1{
-    font-family:sans-serif;
+.work-area {
+    background: rgb(205, 166, 166);
+    color: #222;
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto 0;
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.work-area h1{
+    margin: 10px;
+    padding:10px;
     font-size: 30px;
     border-bottom: 1px solid black;
-    font-size: 18px;
-    padding: 10px;
-    margin:10px;
-}
-.head h3{
- font-size: 18px;
- padding: 5px;
- margin:5px;
+
+}.work-area p{
+    margin: 10px;
+    padding:10px;
+    font-size: 20px;
 }
 .btn{
-    width:100%;
-    display:block;
-    text-align:left;
-    padding:10px 5px;
-    margin:10px auto 0;
+    display: "block";
+    width:90%;
+    text-align: left;
+    margin: 10px;
+    padding:10px;
+    background-color: antiquewhite;
     cursor: pointer;
-    transition: 0.5ms;
-    color: #222;
-    border-radius: 10px;
-}
-.head button:hover{
-    background: #767a79;
-    color:#fff
-}
-.head button:active{
-    background: #5ec0a8;
-    color: rgb(189, 126, 189);
 }
 .next{
-    width:100%;
-    display: flex;
-    align-items: center;
+    background-color: #373333;
+    color:azure;
+    margin-top: 10px;
+    margin-left: 120px;
+    width:20%;
+    padding:5px;
+    text-align: center;
+     cursor: pointer;
+
+}
+#progress-text{
+    font-size: 15px;
+    font-weight: 800;
+
+
+}
+.progress-track {
+    width: 100%;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+    transition: width 0.4s ease;
    
 }
-.next button{
-    width:auto;
-    padding:8px;
-    margin:8px auto;
+#restart-button{
+     background-color: #373333;
+    color:azure;
+    margin-top: 10px;
+    margin-left: 120px;
+    width:20%;
+    padding:5px;
     text-align: center;
     cursor: pointer;
-    display: block;
-    border-radius: 5px;
-    background-color: #222;
-    color: #fff;
 }
+
