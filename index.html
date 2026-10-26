@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizeApp</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="head">
-        <h1>Simple Quize</h1>
-        <h3 class="question">questions goes here..</h3>
-        <div class="answer-btn">
-        <button class="btn">choice1</button>
-        <button class="btn">choice2</button>
-        <button class="btn">choice3</button>
-        <button class="btn">choice4</button>
-        </div>
-       <div class="next">
-         <button >NEXT...</button>
+    <div class="work-area">
+   
+        <h1>Simple Quiz</h1>
+         <p id="progress-text"></p>
+
+    <div class="progress-track">
+        <div id="progress-bar"></div>
+   
     </div>
+        <p id="question">Questions goes here</p>
+        <div class="answer-btn"></div>
+        <button class="next">Next</button>
+        <button id="restart-button">Restart</button>
     </div>
     <script src="script.js"></script>
-    
 </body>
 </html>
